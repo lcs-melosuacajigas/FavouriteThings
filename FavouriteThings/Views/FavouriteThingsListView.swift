@@ -11,8 +11,15 @@ struct FavouriteThingsListView: View {
     var body: some View {
         List {
             Text("Madrid")
+            
+            NavigationLink(destination: {
+                PizzaView()
+            }, label: {
+                Text("Pizza")
+            })
+            
             Text("Real Madrid")
-            Text("Pizza")
+            
         }
         .navigationTitle("Favourite Things App")
     }
